@@ -1,0 +1,14 @@
+c:\users\junior hurtado\documents\visual studio 2015\Projects\app TRANSPORTES_TUMBES_2025\app TRANSPORTES_TUMBES_2025\bin\Debug\app TRANSPORTES_TUMBES_2025.exe.config
+c:\users\junior hurtado\documents\visual studio 2015\Projects\app TRANSPORTES_TUMBES_2025\app TRANSPORTES_TUMBES_2025\obj\Debug\app TRANSPORTES_TUMBES_2025.vbprojResolveAssemblyReference.cache
+c:\users\junior hurtado\documents\visual studio 2015\Projects\app TRANSPORTES_TUMBES_2025\app TRANSPORTES_TUMBES_2025\obj\Debug\app_TRANSPORTES_TUMBES_2025.INICIO_SESION.resources
+c:\users\junior hurtado\documents\visual studio 2015\Projects\app TRANSPORTES_TUMBES_2025\app TRANSPORTES_TUMBES_2025\obj\Debug\app_TRANSPORTES_TUMBES_2025.Resources.resources
+c:\users\junior hurtado\documents\visual studio 2015\Projects\app TRANSPORTES_TUMBES_2025\app TRANSPORTES_TUMBES_2025\obj\Debug\app_TRANSPORTES_TUMBES_2025.REGISTRO.resources
+c:\users\junior hurtado\documents\visual studio 2015\Projects\app TRANSPORTES_TUMBES_2025\app TRANSPORTES_TUMBES_2025\obj\Debug\app_TRANSPORTES_TUMBES_2025.REGISTRO_SELECCIÓN_ASIENTOS.resources
+c:\users\junior hurtado\documents\visual studio 2015\Projects\app TRANSPORTES_TUMBES_2025\app TRANSPORTES_TUMBES_2025\obj\Debug\app_TRANSPORTES_TUMBES_2025.REGISTRO_VENTA_PASAJES.resources
+c:\users\junior hurtado\documents\visual studio 2015\Projects\app TRANSPORTES_TUMBES_2025\app TRANSPORTES_TUMBES_2025\obj\Debug\app TRANSPORTES_TUMBES_2025.vbproj.GenerateResource.Cache
+c:\users\junior hurtado\documents\visual studio 2015\Projects\app TRANSPORTES_TUMBES_2025\app TRANSPORTES_TUMBES_2025\obj\Debug\app TRANSPORTES_TUMBES_2025.xml
+c:\users\junior hurtado\documents\visual studio 2015\Projects\app TRANSPORTES_TUMBES_2025\app TRANSPORTES_TUMBES_2025\bin\Debug\app TRANSPORTES_TUMBES_2025.exe
+c:\users\junior hurtado\documents\visual studio 2015\Projects\app TRANSPORTES_TUMBES_2025\app TRANSPORTES_TUMBES_2025\bin\Debug\app TRANSPORTES_TUMBES_2025.pdb
+c:\users\junior hurtado\documents\visual studio 2015\Projects\app TRANSPORTES_TUMBES_2025\app TRANSPORTES_TUMBES_2025\bin\Debug\app TRANSPORTES_TUMBES_2025.xml
+c:\users\junior hurtado\documents\visual studio 2015\Projects\app TRANSPORTES_TUMBES_2025\app TRANSPORTES_TUMBES_2025\obj\Debug\app TRANSPORTES_TUMBES_2025.exe
+c:\users\junior hurtado\documents\visual studio 2015\Projects\app TRANSPORTES_TUMBES_2025\app TRANSPORTES_TUMBES_2025\obj\Debug\app TRANSPORTES_TUMBES_2025.pdb
