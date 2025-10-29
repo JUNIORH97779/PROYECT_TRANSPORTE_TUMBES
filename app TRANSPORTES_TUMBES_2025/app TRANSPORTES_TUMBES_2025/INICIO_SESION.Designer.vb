@@ -23,7 +23,6 @@ Partial Class INICIO_SESION
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -51,17 +50,6 @@ Partial Class INICIO_SESION
         Me.Label5.Size = New System.Drawing.Size(371, 62)
         Me.Label5.TabIndex = 25
         Me.Label5.Text = "Iniciar sesión"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Maroon
-        Me.Label3.Location = New System.Drawing.Point(691, 433)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(214, 20)
-        Me.Label3.TabIndex = 22
-        Me.Label3.Text = "¿Olvidastes tu contraseña?"
         '
         'Button1
         '
@@ -219,7 +207,6 @@ Partial Class INICIO_SESION
         Me.ClientSize = New System.Drawing.Size(1924, 1055)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox1)
@@ -238,7 +225,6 @@ Partial Class INICIO_SESION
     End Sub
 
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents TextBox1 As TextBox
