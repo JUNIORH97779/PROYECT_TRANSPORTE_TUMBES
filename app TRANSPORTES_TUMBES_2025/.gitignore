@@ -1,0 +1,133 @@
+# =========================================
+# 💻 Visual Studio / VB.NET / Copilot
+# Proyecto: app TRANSPORTES_TUMBES_2025
+# =========================================
+
+# --- Archivos y configuraciones de usuario ---
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.vscode/
+*.vsconfig
+.vscode/
+.idea/
+.vs/
+.vsbackup/
+.vsidx/
+
+# --- Archivos de Copilot e IntelliCode ---
+.copilot/
+.copilot-chat/
+.copilot-temp/
+.copilot-logs/
+*.copilot.*
+*.copilotstate
+*.copilotcache
+*.copilot-completions
+*.copilot-temp
+*.copilot_log
+*.icproj
+*.icsettings
+
+# --- Carpetas de compilación ---
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Tt]emp/
+[Tt]empPE/
+TestResults/
+Release/
+Debug/
+
+# --- Archivos de compilación y temporales ---
+*.pdb
+*.idb
+*.ilk
+*.obj
+*.tlog
+*.pch
+*.manifest
+*.cache
+*.tmp
+*.bak
+*.log
+*.dbmdl
+*.db
+*.db-shm
+*.db-wal
+
+# --- Archivos de base de datos local (para desarrollo) ---
+*.mdf
+*.ldf
+*.sqlite
+*.sdf
+
+# --- Publicaciones y despliegue ---
+publish/
+*.Publish.xml
+*.pubxml
+*.pubxml.user
+*.publishproj
+
+# --- Paquetes y dependencias ---
+packages/
+*.nupkg
+*.snupkg
+*.nuspec
+*.vspscc
+*.vssscc
+
+# --- Cobertura y test ---
+*.coverage
+*.coveragexml
+TestResult*/
+*.trx
+
+# --- Archivos de backup o temporales ---
+*.bak
+*.backup
+*.old
+*.tmp
+*.temp
+~$*
+
+# --- Archivos del sistema ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# --- Configuración IIS Express y local ---
+_IISExpress/
+*.local
+*.vspscc
+*.vssscc
+*.userosscache
+*.suo
+
+# --- Archivos sensibles / llaves ---
+*.pfx
+*.key
+*.cer
+*.env
+*.secrets.json
+
+# --- Archivos específicos del proyecto ---
+app TRANSPORTES_TUMBES_2025/.vs/
+app TRANSPORTES_TUMBES_2025/bin/
+app TRANSPORTES_TUMBES_2025/obj/
+app TRANSPORTES_TUMBES_2025/Debug/
+app TRANSPORTES_TUMBES_2025/Release/
+
+# --- Otros posibles temporales de IA o plugins ---
+*.json.tmp
+*.cache.json
+*.backup.json
+*.analysislog
+*.codeanalysis
+
+# =========================================
+# ✅ Fin del archivo .gitignore optimizado
+# =========================================
