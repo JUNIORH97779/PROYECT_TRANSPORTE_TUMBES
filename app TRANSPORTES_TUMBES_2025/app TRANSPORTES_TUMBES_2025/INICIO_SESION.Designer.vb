@@ -46,7 +46,7 @@ Partial Class INICIO_SESION
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Modern No. 20", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Maroon
-        Me.Label5.Location = New System.Drawing.Point(719, 135)
+        Me.Label5.Location = New System.Drawing.Point(726, 136)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(371, 62)
         Me.Label5.TabIndex = 25
@@ -57,7 +57,7 @@ Partial Class INICIO_SESION
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Maroon
-        Me.Label3.Location = New System.Drawing.Point(710, 431)
+        Me.Label3.Location = New System.Drawing.Point(691, 433)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(214, 20)
         Me.Label3.TabIndex = 22
@@ -115,7 +115,7 @@ Partial Class INICIO_SESION
         Me.Label2.ForeColor = System.Drawing.Color.Maroon
         Me.Label2.Location = New System.Drawing.Point(689, 349)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(172, 32)
+        Me.Label2.Size = New System.Drawing.Size(171, 32)
         Me.Label2.TabIndex = 17
         Me.Label2.Text = "Contraseña"
         '
@@ -128,14 +128,14 @@ Partial Class INICIO_SESION
         Me.Label1.ForeColor = System.Drawing.Color.Maroon
         Me.Label1.Location = New System.Drawing.Point(689, 244)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(265, 32)
+        Me.Label1.Size = New System.Drawing.Size(264, 32)
         Me.Label1.TabIndex = 16
         Me.Label1.Text = "Correo electronico"
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.app_TRANSPORTES_TUMBES_2025.My.Resources.Resources._580b57fbd9996e24bc43bcb7
-        Me.PictureBox1.Location = New System.Drawing.Point(1165, 149)
+        Me.PictureBox1.Location = New System.Drawing.Point(1187, 205)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(466, 302)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom

@@ -116,7 +116,7 @@ Partial Class REGISTRO
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Maroon
-        Me.Label1.Location = New System.Drawing.Point(457, 276)
+        Me.Label1.Location = New System.Drawing.Point(423, 276)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(346, 29)
         Me.Label1.TabIndex = 23
@@ -129,7 +129,7 @@ Partial Class REGISTRO
         Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Maroon
-        Me.Label2.Location = New System.Drawing.Point(473, 375)
+        Me.Label2.Location = New System.Drawing.Point(423, 375)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(285, 29)
         Me.Label2.TabIndex = 24
@@ -142,7 +142,7 @@ Partial Class REGISTRO
         Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Maroon
-        Me.Label3.Location = New System.Drawing.Point(1085, 276)
+        Me.Label3.Location = New System.Drawing.Point(1051, 276)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(356, 29)
         Me.Label3.TabIndex = 25
@@ -155,7 +155,7 @@ Partial Class REGISTRO
         Me.Label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Maroon
-        Me.Label6.Location = New System.Drawing.Point(1211, 375)
+        Me.Label6.Location = New System.Drawing.Point(1051, 375)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(118, 29)
         Me.Label6.TabIndex = 26
