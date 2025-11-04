@@ -1,0 +1,51 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+app TRANSPORTES_TUMBES_2025
+</name>
+</assembly>
+<members>
+<member name="T:app_TRANSPORTES_TUMBES_2025.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:app_TRANSPORTES_TUMBES_2025.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:app_TRANSPORTES_TUMBES_2025.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:app_TRANSPORTES_TUMBES_2025.My.Resources.Resources._580b57fbd9996e24bc43bcb7">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:app_TRANSPORTES_TUMBES_2025.My.Resources.Resources._58482c44cef1014c0b5e4a3c">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:app_TRANSPORTES_TUMBES_2025.My.Resources.Resources.asientos">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:app_TRANSPORTES_TUMBES_2025.My.Resources.Resources.diseño_de_asientos">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:app_TRANSPORTES_TUMBES_2025.My.Resources.Resources.promo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>
