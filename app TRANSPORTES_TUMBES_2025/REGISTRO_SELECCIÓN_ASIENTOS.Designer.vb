@@ -475,13 +475,13 @@ Partial Class REGISTRO_SELECCIÓN_ASIENTOS
         Me.Label3.ForeColor = System.Drawing.Color.Maroon
         Me.Label3.Location = New System.Drawing.Point(886, 194)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(211, 34)
+        Me.Label3.Size = New System.Drawing.Size(216, 34)
         Me.Label3.TabIndex = 40
-        Me.Label3.Text = "Mapa del Bus"
+        Me.Label3.Text = "Mapa del auto"
         '
         'btnGuardar
         '
-        Me.btnGuardar.BackColor = System.Drawing.Color.Blue
+        Me.btnGuardar.BackColor = System.Drawing.Color.Black
         Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.ForeColor = System.Drawing.Color.White

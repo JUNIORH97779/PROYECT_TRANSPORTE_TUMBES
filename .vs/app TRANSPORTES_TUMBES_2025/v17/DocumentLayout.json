@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\JUNIOR HURTADO\\Documents\\Visual Studio 2015\\Projects\\app TRANSPORTES_TUMBES_2025\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|c:\\users\\junior hurtado\\documents\\visual studio 2015\\projects\\app transportes_tumbes_2025\\app transportes_tumbes_2025\\registro_venta_pasajes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|solutionrelative:app transportes_tumbes_2025\\registro_venta_pasajes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|c:\\users\\junior hurtado\\documents\\visual studio 2015\\projects\\app transportes_tumbes_2025\\app transportes_tumbes_2025\\registro_selecci\u00F3n_asientos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|solutionrelative:app transportes_tumbes_2025\\registro_selecci\u00F3n_asientos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|c:\\users\\junior hurtado\\documents\\visual studio 2015\\projects\\app transportes_tumbes_2025\\app transportes_tumbes_2025\\registro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|solutionrelative:app transportes_tumbes_2025\\registro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|c:\\users\\junior hurtado\\documents\\visual studio 2015\\projects\\app transportes_tumbes_2025\\app transportes_tumbes_2025\\inicio_sesion.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|solutionrelative:app transportes_tumbes_2025\\inicio_sesion.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|c:\\users\\junior hurtado\\documents\\visual studio 2015\\projects\\app transportes_tumbes_2025\\app transportes_tumbes_2025\\login_principal\\formulario_ventas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|solutionrelative:app transportes_tumbes_2025\\login_principal\\formulario_ventas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|c:\\users\\junior hurtado\\documents\\visual studio 2015\\projects\\app transportes_tumbes_2025\\app transportes_tumbes_2025\\login_principal\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|solutionrelative:app transportes_tumbes_2025\\login_principal\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LOGIN.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\JUNIOR HURTADO\\Documents\\Visual Studio 2015\\Projects\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\LOGIN_PRINCIPAL\\LOGIN.vb",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\LOGIN_PRINCIPAL\\LOGIN.vb",
+              "ToolTip": "C:\\Users\\JUNIOR HURTADO\\Documents\\Visual Studio 2015\\Projects\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\LOGIN_PRINCIPAL\\LOGIN.vb [Dise\u00F1o]",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\LOGIN_PRINCIPAL\\LOGIN.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-20T22:30:03.957Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FORMULARIO_VENTAS.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\JUNIOR HURTADO\\Documents\\Visual Studio 2015\\Projects\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\LOGIN_PRINCIPAL\\FORMULARIO_VENTAS.vb",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\LOGIN_PRINCIPAL\\FORMULARIO_VENTAS.vb",
+              "ToolTip": "C:\\Users\\JUNIOR HURTADO\\Documents\\Visual Studio 2015\\Projects\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\LOGIN_PRINCIPAL\\FORMULARIO_VENTAS.vb [Dise\u00F1o]",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\LOGIN_PRINCIPAL\\FORMULARIO_VENTAS.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-20T22:30:02.302Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "REGISTRO_VENTA_PASAJES.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\JUNIOR HURTADO\\Documents\\Visual Studio 2015\\Projects\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\REGISTRO_VENTA_PASAJES.vb",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\REGISTRO_VENTA_PASAJES.vb",
+              "ToolTip": "C:\\Users\\JUNIOR HURTADO\\Documents\\Visual Studio 2015\\Projects\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\REGISTRO_VENTA_PASAJES.vb [Dise\u00F1o]",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\REGISTRO_VENTA_PASAJES.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-20T22:29:51.425Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "REGISTRO.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\JUNIOR HURTADO\\Documents\\Visual Studio 2015\\Projects\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\REGISTRO.vb",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\REGISTRO.vb",
+              "ToolTip": "C:\\Users\\JUNIOR HURTADO\\Documents\\Visual Studio 2015\\Projects\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\REGISTRO.vb [Dise\u00F1o]",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\REGISTRO.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-20T22:29:16.38Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "INICIO_SESION.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\JUNIOR HURTADO\\Documents\\Visual Studio 2015\\Projects\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\INICIO_SESION.vb",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\INICIO_SESION.vb",
+              "ToolTip": "C:\\Users\\JUNIOR HURTADO\\Documents\\Visual Studio 2015\\Projects\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\INICIO_SESION.vb [Dise\u00F1o]",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\INICIO_SESION.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-20T22:27:36.009Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "REGISTRO_SELECCI\u00D3N_ASIENTOS.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\JUNIOR HURTADO\\Documents\\Visual Studio 2015\\Projects\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\REGISTRO_SELECCI\u00D3N_ASIENTOS.vb",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\REGISTRO_SELECCI\u00D3N_ASIENTOS.vb",
+              "ToolTip": "C:\\Users\\JUNIOR HURTADO\\Documents\\Visual Studio 2015\\Projects\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\REGISTRO_SELECCI\u00D3N_ASIENTOS.vb [Dise\u00F1o]",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\REGISTRO_SELECCI\u00D3N_ASIENTOS.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-20T22:26:43.183Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
