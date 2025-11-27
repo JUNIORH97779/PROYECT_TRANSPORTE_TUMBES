@@ -1,0 +1,153 @@
+
+USE [TRANSPORTE-TUMBES];
+GO
+
+-- =============================================
+-- GRUPO 1: TABLAS MAESTRAS (Configuración)
+-- =============================================
+
+-- Tabla de Roles (Para diferenciar Admin de Recepcionista)
+CREATE TABLE ROL (
+    ID_Rol INT PRIMARY KEY IDENTITY(1,1),
+    NombreRol VARCHAR(50) NOT NULL,      -- Ej: 'Administrador', 'Recepcionista'
+    Descripcion VARCHAR(100) NULL
+);
+
+-- Tabla de Usuarios (Quienes acceden al sistema)
+CREATE TABLE USUARIO (
+    ID_Usuario INT PRIMARY KEY IDENTITY(1,1),
+    ID_Rol INT NOT NULL,
+    NombreUsuario VARCHAR(50) NOT NULL UNIQUE, -- No se puede repetir el usuario
+    PasswordHash VARCHAR(255) NOT NULL,        -- Espacio para la clave encriptada
+    NombreCompleto VARCHAR(100) NOT NULL,
+    Estado BIT DEFAULT 1,                      -- 1=Activo, 0=Inactivo
+    FOREIGN KEY (ID_Rol) REFERENCES ROL(ID_Rol)
+);
+
+-- Tabla de Tipos de Documento (DNI, Pasaporte, etc.)
+CREATE TABLE TIPO_DOCUMENTO (
+    ID_TipoDocumento INT PRIMARY KEY IDENTITY(1,1),
+    NombreDocumento VARCHAR(50) NULL, -- Ej: 'Documento Nacional de Identidad'
+    Abreviatura VARCHAR(10) NOT NULL      -- Ej: 'DNI'
+);
+
+-- =============================================
+-- GRUPO 2: RECURSOS OPERATIVOS
+-- =============================================
+
+-- Tabla de Rutas
+CREATE TABLE RUTA (
+    ID_Ruta INT PRIMARY KEY IDENTITY(1,1),
+    Origen VARCHAR(50) NOT NULL DEFAULT 'Tumbes', -- Por defecto
+    Destino VARCHAR(50) NOT NULL,
+    PrecioBase DECIMAL(10, 2) NOT NULL,           -- DECIMAL es vital para dinero
+    DuracionAprox_Min INT NOT NULL,               -- En minutos (Ej: 120 para 2 horas)
+    Estado BIT DEFAULT 1                          -- 1=Activa, 0=Inactiva
+);
+
+-- Tabla de Movilidades (Buses, Vans, etc.)
+CREATE TABLE MOVILIDAD (
+    ID_Movilidad INT PRIMARY KEY IDENTITY(1,1),
+    Placa VARCHAR(10) NOT NULL UNIQUE,    -- La placa es única, no se repite
+    Tipo VARCHAR(30) NOT NULL,            -- Ej: 'Bus', 'Minivan', 'Auto'
+    Capacidad INT NOT NULL,               -- Número de asientos (Ej: 40)
+    Marca VARCHAR(50) NULL,
+    Estado BIT DEFAULT 1                  -- 1=Operativo, 0=En Taller
+);
+
+-- Tabla de Choferes
+CREATE TABLE CHOFER (
+    ID_Chofer INT PRIMARY KEY IDENTITY(1,1),
+    ID_TipoDocumento INT NOT NULL,
+    NumeroDocumento VARCHAR(20) NOT NULL UNIQUE, -- DNI único
+    Nombres VARCHAR(50) NOT NULL,
+    Apellidos VARCHAR(50) NOT NULL,
+    NumeroLicencia VARCHAR(20) NOT NULL UNIQUE,  -- Licencia única
+    Telefono VARCHAR(15) NULL,
+    Estado VARCHAR(20) DEFAULT 'Disponible',     -- Ej: 'Disponible', 'Vacaciones'
+    FOREIGN KEY (ID_TipoDocumento) REFERENCES TIPO_DOCUMENTO(ID_TipoDocumento)
+);
+
+-- =============================================
+-- GRUPO 3: CLIENTES
+-- =============================================
+
+CREATE TABLE CLIENTE (
+    ID_Cliente INT PRIMARY KEY IDENTITY(1,1),
+    ID_TipoDocumento INT NOT NULL,
+    NumeroDocumento VARCHAR(20) NOT NULL,
+    Nombres VARCHAR(50) NOT NULL,
+    Apellidos VARCHAR(50) NOT NULL,
+    Telefono VARCHAR(15) NULL,
+    Email VARCHAR(100) NULL, -- Opcional
+    CONSTRAINT UK_Cliente_Documento UNIQUE (ID_TipoDocumento, NumeroDocumento), -- Evita duplicados del mismo doc
+    FOREIGN KEY (ID_TipoDocumento) REFERENCES TIPO_DOCUMENTO(ID_TipoDocumento)
+);
+
+-- =============================================
+-- GRUPO 4: TRANSACCIONALES (El corazón del negocio)
+-- =============================================
+
+-- Tabla VIAJE: Une Ruta + Movilidad + Chofer + Fecha
+CREATE TABLE VIAJE (
+    ID_Viaje INT PRIMARY KEY IDENTITY(1,1),
+    ID_Ruta INT NOT NULL,
+    ID_Movilidad INT NOT NULL,
+    ID_Chofer INT NOT NULL,
+    FechaHoraSalida DATETIME NOT NULL,
+    Estado VARCHAR(20) DEFAULT 'Programado', -- 'Programado', 'En Curso', 'Finalizado', 'Cancelado'
+    
+    FOREIGN KEY (ID_Ruta) REFERENCES RUTA(ID_Ruta),
+    FOREIGN KEY (ID_Movilidad) REFERENCES MOVILIDAD(ID_Movilidad),
+    FOREIGN KEY (ID_Chofer) REFERENCES CHOFER(ID_Chofer)
+);
+
+-- Tabla VENTA: El encabezado del comprobante
+CREATE TABLE VENTA (
+    ID_Venta INT PRIMARY KEY IDENTITY(1,1),
+    ID_Cliente INT NOT NULL,
+    ID_Usuario INT NOT NULL,                 -- Quien hizo la venta
+    FechaVenta DATETIME DEFAULT GETDATE(),   -- Se guarda la fecha/hora actual sola
+    TipoComprobante VARCHAR(20) NOT NULL,    -- 'Boleta', 'Factura', 'Ticket'
+    SerieComprobante VARCHAR(10) NULL,       -- Ej: 'B001'
+    CorrelativoComprobante VARCHAR(20) NULL, -- Ej: '0000234'
+    MontoTotal DECIMAL(10, 2) NOT NULL,
+    Estado VARCHAR(20) DEFAULT 'Pagada',     -- 'Pagada', 'Anulada'
+
+    FOREIGN KEY (ID_Cliente) REFERENCES Cliente(ID_Cliente),
+    FOREIGN KEY (ID_Usuario) REFERENCES Usuario(ID_Usuario)
+);
+
+-- Tabla PASAJE: El detalle de los asientos
+CREATE TABLE PASAJE (
+    ID_Pasaje INT PRIMARY KEY IDENTITY(1,1),
+    ID_Venta INT NOT NULL,
+    ID_Viaje INT NOT NULL,
+    NumeroAsiento INT NOT NULL,
+    PrecioFinal DECIMAL(10, 2) NOT NULL, -- Precio cobrado (puede variar del base)
+    
+    FOREIGN KEY (ID_Venta) REFERENCES VENTA(ID_Venta),
+    FOREIGN KEY (ID_Viaje) REFERENCES VIAJE(ID_Viaje),
+    
+    -- Restricción IMPORTANTE: No vender el mismo asiento 2 veces en el mismo viaje
+    CONSTRAINT UK_Asiento_Viaje UNIQUE (ID_Viaje, NumeroAsiento)
+);
+GO
+
+-- =============================================
+-- INSERTAR DATOS INICIALES (SEMILLA)
+-- =============================================
+
+-- 1. Roles Base
+INSERT INTO ROL (NombreRol) VALUES ('Administrador'), ('Recepcionista');
+
+-- 2. Tipos de Documento Base
+INSERT INTO TIPO_DOCUMENTO (NombreDocumento, Abreviatura) VALUES 
+('Documento Nacional de Identidad', 'DNI'),
+('Pasaporte', 'PAS'),
+('Carnet de Extranjería', 'CE');
+
+-- 3. Usuario Administrador por defecto (Clave genérica '123456' - idealmente encriptada)
+-- NOTA: En tu app VB.NET deberás crear la función de encriptación.
+INSERT INTO USUARIO(ID_Rol, NombreUsuario, PasswordHash, NombreCompleto) 
+VALUES (1, 'admin', '123456', 'Administrador del Sistema');
