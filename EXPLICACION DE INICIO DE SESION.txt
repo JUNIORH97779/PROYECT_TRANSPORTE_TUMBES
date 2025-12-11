@@ -1,0 +1,232 @@
+EXPLICACION DE INICIO DE SESION (incluido el rol por el tipo de usuario) uso de ia, por que me demoro en realizarlo de manera manual
+
+Implementación de login con roles en VB.NET
+A continuación tienes una guía completa para tu compañero: diferencias entre app.config y una clase de conexión, un archivo conexion.vb listo para usar, el formulario INICIO DE SESION con validaciones y autenticación contra tu esquema (ROL y USUARIO), y cómo aplicar permisos en el formulario MENU para mostrar/habilitar “Mantenimiento” solo a Administrador.
+
+Uso de app.config vs clase de conexión
+Propósito
+
+app.config: Define: la cadena de conexión (servidor, base, autenticación). Ventaja: un único lugar para cambiar el servidor/BD; no hay que recompilar para actualizar la cadena.
+
+Clase de conexión (conexion.vb): Define: cómo abrir/cerrar conexiones y ejecutar consultas con parámetros. Ventaja: centraliza buenas prácticas (Using, parámetros, manejo de errores) y reutiliza lógica.
+
+Mantenimiento
+
+app.config: se edita sin recompilar; ideal para distintos ambientes (dev/test/prod).
+
+conexion.vb: encapsula acceso y evita duplicar código en formularios; si cambias la lógica, lo haces en un lugar.
+
+Seguridad
+
+app.config: evita hardcodear credenciales en código.
+
+conexion.vb: obliga a usar parámetros, controla apertura/cierre de conexiones, y puede incluir funciones de hash para contraseñas.
+
+Conclusión
+
+Usa ambos: app.config para la cadena de conexión; conexion.vb para el acceso ordenado y seguro desde los forms.
+
+Archivo conexion.vb (centralizado y seguro)
+Pon este archivo en tu proyecto. Cambia el nombre de la cadena en app.config en la constante ConnectionName para que coincida con tu proyecto.
+
+vbnet
+Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Configuration
+Imports System.Security.Cryptography
+Imports System.Text
+
+Public Class Conexion
+    ' Cambia este nombre por el que tengas en tu app.config
+    Private Const ConnectionName As String = "app_TRANSPORTES_TUMBES_2025.My.MySettings.TRANSPORTE_TUMBESConnectionString"
+
+    Private ReadOnly _connectionString As String
+
+    Public Sub New()
+        Dim cs = ConfigurationManager.ConnectionStrings(ConnectionName)
+        If cs Is Nothing Then
+            Throw New InvalidOperationException("No se encontró la cadena de conexión en app.config: " & ConnectionName)
+        End If
+        _connectionString = cs.ConnectionString
+    End Sub
+
+    Public Function CrearConexion() As SqlConnection
+        Return New SqlConnection(_connectionString)
+    End Function
+
+    ' Ejecuta consulta y devuelve DataTable (para combos, grillas, etc.)
+    Public Function EjecutarTabla(query As String, parametros As List(Of SqlParameter)) As DataTable
+        Dim dt As New DataTable()
+        Using cn = CrearConexion(), cmd As New SqlCommand(query, cn)
+            If parametros IsNot Nothing Then cmd.Parameters.AddRange(parametros.ToArray())
+            cn.Open()
+            Using da As New SqlDataAdapter(cmd)
+                da.Fill(dt)
+            End Using
+        End Using
+        Return dt
+    End Function
+
+    ' Autenticar usuario: devuelve NombreRol y datos básicos si coincide Usuario + Password + Estado=1
+    Public Function AutenticarUsuario(nombreUsuario As String, passwordTextoPlano As String) As (Exito As Boolean, NombreRol As String, NombreCompleto As String)
+        ' Nota: Si luego guardas hash, reemplaza passwordTextoPlano por el hash que corresponda
+        Dim sql As String =
+            "SELECT r.NombreRol, u.NombreCompleto " &
+            "FROM USUARIO u " &
+            "INNER JOIN ROL r ON u.ID_Rol = r.ID_Rol " &
+            "WHERE u.NombreUsuario = @usuario AND u.PasswordHash = @pass AND u.Estado = 1"
+
+        Dim parametros As New List(Of SqlParameter) From {
+            New SqlParameter("@usuario", SqlDbType.VarChar, 50) With {.Value = nombreUsuario},
+            New SqlParameter("@pass", SqlDbType.VarChar, 255) With {.Value = passwordTextoPlano}
+        }
+
+        Using cn = CrearConexion(), cmd As New SqlCommand(sql, cn)
+            cmd.Parameters.AddRange(parametros.ToArray())
+            cn.Open()
+            Using rd = cmd.ExecuteReader()
+                If rd.Read() Then
+                    Dim rol = rd("NombreRol").ToString()
+                    Dim nombre = rd("NombreCompleto").ToString()
+                    Return (True, rol, nombre)
+                End If
+            End Using
+        End Using
+
+        Return (False, Nothing, Nothing)
+    End Function
+
+    ' Cargar roles: devuelve DataTable con ID_Rol y NombreRol para enlazar al ComboBox
+    Public Function ObtenerRoles() As DataTable
+        Dim sql As String = "SELECT ID_Rol, NombreRol FROM ROL ORDER BY NombreRol"
+        Return EjecutarTabla(sql, Nothing)
+    End Function
+
+    ' Ejemplo opcional: calcular hash SHA-256 si decides guardar hash en BD
+    Public Shared Function Sha256(texto As String) As String
+        Using sha = SHA256.Create()
+            Dim bytes = Encoding.UTF8.GetBytes(texto)
+            Dim hash = sha.ComputeHash(bytes)
+            Dim sb As New StringBuilder()
+            For Each b In hash
+                sb.Append(b.ToString("x2"))
+            Next
+            Return sb.ToString()
+        End Using
+    End Function
+End Class
+Formulario “INICIO DE SESION” (validación + autenticación + rol)
+Este formulario valida que Usuario y Contraseña no estén vacíos, exige seleccionar un rol, autentica contra USUARIO/ROL y, si todo coincide, abre MENU aplicando permisos.
+
+vbnet
+Imports System.Data
+Imports System.Data.SqlClient
+
+Public Class InicioDeSesion
+    Private ReadOnly db As New Conexion()
+
+    Private Sub InicioDeSesion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Try
+            ' Cargar roles desde la BD y enlazarlos al ComboBox
+            Dim dtRoles = db.ObtenerRoles()
+            ComboBoxRol.DataSource = dtRoles
+            ComboBoxRol.DisplayMember = "NombreRol"
+            ComboBoxRol.ValueMember = "ID_Rol"
+            ComboBoxRol.SelectedIndex = -1 ' nada seleccionado al iniciar
+        Catch ex As Exception
+            MessageBox.Show("Error cargando roles: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    Private Sub ButtonIngresar_Click(sender As Object, e As EventArgs) Handles ButtonIngresar.Click
+        ' Validaciones de campos
+        Dim usuario As String = TextBoxUsuario.Text.Trim()
+        Dim contrasena As String = TextBoxContrasena.Text.Trim()
+
+        If String.IsNullOrEmpty(usuario) Then
+            MessageBox.Show("Ingrese el usuario.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            TextBoxUsuario.Focus()
+            Exit Sub
+        End If
+
+        If String.IsNullOrEmpty(contrasena) Then
+            MessageBox.Show("Ingrese la contraseña.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            TextBoxContrasena.Focus()
+            Exit Sub
+        End If
+
+        If ComboBoxRol.SelectedIndex = -1 Then
+            MessageBox.Show("Seleccione un rol.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            ComboBoxRol.DroppedDown = True
+            Exit Sub
+        End If
+
+        Try
+            ' Autenticar contra la BD (actualmente PasswordHash guarda texto plano, ej. '123456')
+            ' Si luego guardas SHA256, usa: db.AutenticarUsuario(usuario, Conexion.Sha256(contrasena))
+            Dim resultado = db.AutenticarUsuario(usuario, contrasena)
+
+            If Not resultado.Exito Then
+                MessageBox.Show("Usuario o contraseña incorrectos, o usuario inactivo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Exit Sub
+            End If
+
+            ' Verificar que el rol seleccionado coincide con el rol del usuario en BD
+            Dim rolBD As String = resultado.NombreRol.Trim()
+            Dim rolSeleccionado As String = ComboBoxRol.Text.Trim()
+
+            If Not String.Equals(rolBD, rolSeleccionado, StringComparison.OrdinalIgnoreCase) Then
+                MessageBox.Show("El rol seleccionado no coincide con el rol del usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Exit Sub
+            End If
+
+            ' Acceso concedido: abrir MENU y aplicar permisos
+            MessageBox.Show($"Bienvenido {resultado.NombreCompleto}", "Acceso concedido", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            Dim frmMenu As New Menu()
+            ' Pasar el rol para aplicar permisos
+            frmMenu.RolActual = rolBD
+            frmMenu.Show()
+
+            ' Opcional: ocultar el login
+            Me.Hide()
+
+        Catch ex As Exception
+            MessageBox.Show("Error durante el inicio de sesión: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+End Class
+Asegúrate de que los nombres de controles coincidan:
+
+TextBoxUsuario, TextBoxContrasena, ComboBoxRol, ButtonIngresar.
+
+Clase del formulario: InicioDeSesion.
+
+Formulario “MENU” (aplicar permisos sobre Mantenimiento)
+En el MENU, crea una propiedad pública RolActual para recibir el rol desde el login y aplica permisos en Load/Shown. Supongamos que “Mantenimiento” es un ToolStripMenuItem llamado MantenimientoToolStripMenuItem. Si en tu proyecto es un botón, ajusta el nombre y tipo de control.
+
+vbnet
+Public Class Menu
+    Public Property RolActual As String
+
+    Private Sub Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AplicarPermisos()
+    End Sub
+
+    Private Sub AplicarPermisos()
+        Dim esAdmin As Boolean = String.Equals(RolActual?.Trim(), "Administrador", StringComparison.OrdinalIgnoreCase)
+
+        ' Solo Administrador puede ver/habilitar Mantenimiento
+        MantenimientoToolStripMenuItem.Visible = esAdmin
+        MantenimientoToolStripMenuItem.Enabled = esAdmin
+
+        ' Si NO es admin y prefieres ocultarlo completamente:
+        ' MantenimientoToolStripMenuItem.Visible = esAdmin
+        ' (Enabled es redundante si Visible=False)
+    End Sub
+End Class
+Si tu rol en la tabla ROL se llama “Administrador” (como en tu script), usa ese literal exacto. Si fuese “Recepcionista” u otro, no tendrá acceso a Mantenimiento.
+
+
+
+
