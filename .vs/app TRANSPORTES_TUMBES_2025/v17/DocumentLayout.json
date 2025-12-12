@@ -1,0 +1,226 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\app TRANSPORTES_TUMBES_2025\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|D:\\app TRANSPORTES_TUMBES_2025\\app transportes_tumbes_2025\\formularios_del_sistema\\modulo_de_operaciones(venta,viajes y consulta)\\buscar_clientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|solutionrelative:app transportes_tumbes_2025\\formularios_del_sistema\\modulo_de_operaciones(venta,viajes y consulta)\\buscar_clientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|d:\\app transportes_tumbes_2025\\app transportes_tumbes_2025\\formularios_del_sistema\\inicio_sesion.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|solutionrelative:app transportes_tumbes_2025\\formularios_del_sistema\\inicio_sesion.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|d:\\app transportes_tumbes_2025\\app transportes_tumbes_2025\\formularios_del_sistema\\inicio_sesion.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|solutionrelative:app transportes_tumbes_2025\\formularios_del_sistema\\inicio_sesion.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|D:\\app TRANSPORTES_TUMBES_2025\\app transportes_tumbes_2025\\formularios_del_sistema\\mantenimiento_cliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|solutionrelative:app transportes_tumbes_2025\\formularios_del_sistema\\mantenimiento_cliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|D:\\app TRANSPORTES_TUMBES_2025\\app transportes_tumbes_2025\\formularios_del_sistema\\modulo_de_operaciones(venta,viajes y consulta)\\formulario_ventas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|solutionrelative:app transportes_tumbes_2025\\formularios_del_sistema\\modulo_de_operaciones(venta,viajes y consulta)\\formulario_ventas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|D:\\app TRANSPORTES_TUMBES_2025\\app transportes_tumbes_2025\\formularios_del_sistema\\modulo_de_operaciones(venta,viajes y consulta)\\formulario_ventas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|solutionrelative:app transportes_tumbes_2025\\formularios_del_sistema\\modulo_de_operaciones(venta,viajes y consulta)\\formulario_ventas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|D:\\app TRANSPORTES_TUMBES_2025\\app transportes_tumbes_2025\\formularios_del_sistema\\modulo_de_mantenimiento(gestion)\\gestion_movilidades.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|solutionrelative:app transportes_tumbes_2025\\formularios_del_sistema\\modulo_de_mantenimiento(gestion)\\gestion_movilidades.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|D:\\app TRANSPORTES_TUMBES_2025\\app transportes_tumbes_2025\\formularios_del_sistema\\modulo_de_mantenimiento(gestion)\\gestion_rutas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|solutionrelative:app transportes_tumbes_2025\\formularios_del_sistema\\modulo_de_mantenimiento(gestion)\\gestion_rutas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|D:\\app TRANSPORTES_TUMBES_2025\\app transportes_tumbes_2025\\formularios_del_sistema\\modulo_de_mantenimiento(gestion)\\gestion_usuarios.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|solutionrelative:app transportes_tumbes_2025\\formularios_del_sistema\\modulo_de_mantenimiento(gestion)\\gestion_usuarios.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|D:\\app TRANSPORTES_TUMBES_2025\\app transportes_tumbes_2025\\formularios_del_sistema\\modulo_de_operaciones(venta,viajes y consulta)\\buscar_clientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|solutionrelative:app transportes_tumbes_2025\\formularios_del_sistema\\modulo_de_operaciones(venta,viajes y consulta)\\buscar_clientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|app TRANSPORTES_TUMBES_2025||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|D:\\app TRANSPORTES_TUMBES_2025\\app transportes_tumbes_2025\\formularios_del_sistema\\modulo_de_mantenimiento(gestion)\\gestion_usuarios.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|solutionrelative:app transportes_tumbes_2025\\formularios_del_sistema\\modulo_de_mantenimiento(gestion)\\gestion_usuarios.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|D:\\app TRANSPORTES_TUMBES_2025\\app transportes_tumbes_2025\\formularios_del_sistema\\modulo_de_operaciones(venta,viajes y consulta)\\programar_viajes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D90001D8-04E0-4835-A19C-3D0C42148BB9}|app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj|solutionrelative:app transportes_tumbes_2025\\formularios_del_sistema\\modulo_de_operaciones(venta,viajes y consulta)\\programar_viajes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "INICIO_SESION.vb",
+              "DocumentMoniker": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\INICIO_SESION.vb",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\INICIO_SESION.vb",
+              "ToolTip": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\INICIO_SESION.vb",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\INICIO_SESION.vb",
+              "ViewState": "AgIAAAsAAAAAAAAAAIA4wCIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-11T22:37:59.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FORMULARIO_VENTAS.vb [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\FORMULARIO_VENTAS.vb",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\FORMULARIO_VENTAS.vb",
+              "ToolTip": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\FORMULARIO_VENTAS.vb [Dise\u00F1o]",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\FORMULARIO_VENTAS.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-11T21:09:31.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FORMULARIO_VENTAS.vb",
+              "DocumentMoniker": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\FORMULARIO_VENTAS.vb",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\FORMULARIO_VENTAS.vb",
+              "ToolTip": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\FORMULARIO_VENTAS.vb",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\FORMULARIO_VENTAS.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-11T21:09:34.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "INICIO_SESION.vb [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\INICIO_SESION.vb",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\INICIO_SESION.vb",
+              "ToolTip": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\INICIO_SESION.vb [Dise\u00F1o]",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\INICIO_SESION.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-11T20:17:47.907Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BUSCAR_CLIENTES.vb [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\BUSCAR_CLIENTES.vb",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\BUSCAR_CLIENTES.vb",
+              "ToolTip": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\BUSCAR_CLIENTES.vb [Dise\u00F1o]",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\BUSCAR_CLIENTES.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-11T21:29:29.459Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GESTION_MOVILIDADES.vb [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_MANTENIMIENTO(GESTION)\\GESTION_MOVILIDADES.vb",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_MANTENIMIENTO(GESTION)\\GESTION_MOVILIDADES.vb",
+              "ToolTip": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_MANTENIMIENTO(GESTION)\\GESTION_MOVILIDADES.vb [Dise\u00F1o]",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_MANTENIMIENTO(GESTION)\\GESTION_MOVILIDADES.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-11T21:33:52.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "mantenimiento_cliente.vb [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\mantenimiento_cliente.vb",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\mantenimiento_cliente.vb",
+              "ToolTip": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\mantenimiento_cliente.vb [Dise\u00F1o]",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\mantenimiento_cliente.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-11T21:09:04.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GESTION_USUARIOS.vb [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_MANTENIMIENTO(GESTION)\\GESTION_USUARIOS.vb",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_MANTENIMIENTO(GESTION)\\GESTION_USUARIOS.vb",
+              "ToolTip": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_MANTENIMIENTO(GESTION)\\GESTION_USUARIOS.vb [Dise\u00F1o]",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_MANTENIMIENTO(GESTION)\\GESTION_USUARIOS.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-11T21:30:23.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BUSCAR_CLIENTES.vb",
+              "DocumentMoniker": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\BUSCAR_CLIENTES.vb",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\BUSCAR_CLIENTES.vb",
+              "ToolTip": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\BUSCAR_CLIENTES.vb",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\BUSCAR_CLIENTES.vb",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-11T21:30:09.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GESTION_USUARIOS.vb",
+              "DocumentMoniker": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_MANTENIMIENTO(GESTION)\\GESTION_USUARIOS.vb",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_MANTENIMIENTO(GESTION)\\GESTION_USUARIOS.vb",
+              "ToolTip": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_MANTENIMIENTO(GESTION)\\GESTION_USUARIOS.vb",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_MANTENIMIENTO(GESTION)\\GESTION_USUARIOS.vb",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAjwHMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-11T21:30:26.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GESTION_RUTAS.vb [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_MANTENIMIENTO(GESTION)\\GESTION_RUTAS.vb",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_MANTENIMIENTO(GESTION)\\GESTION_RUTAS.vb",
+              "ToolTip": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_MANTENIMIENTO(GESTION)\\GESTION_RUTAS.vb [Dise\u00F1o]",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_MANTENIMIENTO(GESTION)\\GESTION_RUTAS.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-11T20:17:45.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "app TRANSPORTES_TUMBES_2025",
+              "DocumentMoniker": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj",
+              "ToolTip": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj*",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025.vbproj*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-11T21:30:35.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PROGRAMAR_VIAJES.vb [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\PROGRAMAR_VIAJES.vb",
+              "RelativeDocumentMoniker": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\PROGRAMAR_VIAJES.vb",
+              "ToolTip": "D:\\app TRANSPORTES_TUMBES_2025\\app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\PROGRAMAR_VIAJES.vb [Dise\u00F1o]",
+              "RelativeToolTip": "app TRANSPORTES_TUMBES_2025\\FORMULARIOS_DEL_SISTEMA\\MODULO_DE_OPERACIONES(VENTA,VIAJES Y CONSULTA)\\PROGRAMAR_VIAJES.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-11T21:29:25.503Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

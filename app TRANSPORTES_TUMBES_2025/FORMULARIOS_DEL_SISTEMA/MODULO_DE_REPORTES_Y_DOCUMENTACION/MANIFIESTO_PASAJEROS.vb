@@ -1,0 +1,3 @@
+﻿Public Class MANIFIESTO_PASAJEROS
+
+End Class
